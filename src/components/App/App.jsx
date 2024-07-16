@@ -5,8 +5,10 @@ import Navigation from '../Navigation/Navigation';
 import HomePage from '../../pages/HomePage';
 import MoviesPage from '../../pages/MoviesPage';
 import NotFoundPage from '../../pages/NotFoundPage';
+import { fetchMovieList } from '../../api';
 
 const App = () => {
+  fetchMovieList();
   return (
     <div>
       <h1>App</h1>
