@@ -19,3 +19,5 @@ module.exports = {
     ],
   },
 };
+
+// docs.google.com/spreadsheets/d/12jXaxS8O86MKGAmrz
