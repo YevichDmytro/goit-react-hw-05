@@ -1,0 +1,11 @@
+.movieList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.listItem {
+  border: 2px solid red;
+  border-radius: 8px;
+  width: fit-content;
+}

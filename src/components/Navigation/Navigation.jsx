@@ -2,10 +2,13 @@ import { NavLink } from 'react-router-dom';
 import style from './Navigation.module.css';
 import clsx from 'clsx';
 
+
 const Navigation = () => {
   const showActiveLink = ({ isActive }) => {
     return clsx(style.link, isActive && style.active);
   };
+
+
 
   return (
     <header>
