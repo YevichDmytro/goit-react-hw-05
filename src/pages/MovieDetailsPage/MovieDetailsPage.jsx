@@ -7,7 +7,7 @@ import {
   useParams,
 } from 'react-router-dom';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
-import Loader from '../Loader/Loader';
+import Loader from '../../components/Loader/Loader';
 import { fetchMovieById } from '../../tmdb-api';
 import clsx from 'clsx';
 import style from './MovieDetailsPage.module.css';
@@ -20,7 +20,7 @@ const MovieDetailsPage = () => {
   const [loader, setLoader] = useState(false);
 
   const location = useLocation();
-  const backLinkRef = useRef(location.state ?? '/');
+  const backLinkRef = useRef(location.state ?? '/movie');
   const { movieId } = useParams();
 
   useEffect(() => {
@@ -62,13 +62,10 @@ const MovieDetailsPage = () => {
         </div>
 
         <div className={style.linksWrap}>
-          <Link to={location.state} className={style.goBack}>
-            Close info
-          </Link>
-          <NavLink to='cast' className={showActiveLink} state={location}>
+          <NavLink to='cast' className={showActiveLink}>
             Cast
           </NavLink>
-          <NavLink to='reviews' className={showActiveLink} state={location}>
+          <NavLink to='reviews' className={showActiveLink}>
             Reviews
           </NavLink>
 

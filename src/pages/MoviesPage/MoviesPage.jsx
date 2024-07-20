@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import MovieList from '../../components/MovieList/MovieList';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
-import Loader from '../Loader/Loader';
+import Loader from '../../components/Loader/Loader';
 import { fetchMovieByTitle } from '../../tmdb-api';
 import style from './MoviesPage.module.css';
 

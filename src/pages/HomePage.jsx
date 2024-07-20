@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import MovieList from '../components/MovieList/MovieList';
 import ErrorMessage from '../components/ErrorMessage/ErrorMessage';
-import Loader from '../Loader/Loader';
+import Loader from '../components/Loader/Loader';
 import { fetchTrendingMovies } from '../tmdb-api';
 
 const HomePage = () => {
