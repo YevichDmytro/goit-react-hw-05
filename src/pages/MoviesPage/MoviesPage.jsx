@@ -60,7 +60,7 @@ const MoviesPage = () => {
         <input type='text' name='search' />
         <button type='submit'>Search</button>
       </form>
-      <MovieList onFilter={movieTitleFilter} />
+      <MovieList moviesList={movieTitleFilter} />
       {loader && <Loader />}
       {error && <ErrorMessage />}
     </div>

@@ -14,7 +14,7 @@ const Navigation = () => {
           Home
         </NavLink>
 
-        <NavLink to='/movie' className={showActiveLink}>
+        <NavLink to='/movies' className={showActiveLink}>
           Search movies
         </NavLink>
       </nav>

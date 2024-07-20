@@ -27,7 +27,7 @@ const HomePage = () => {
 
   return (
     <>
-      <MovieList onFilter={movieList} />
+      {movieList.length > 0 && <MovieList moviesList={movieList} />}
       {loader && <Loader />}
       {error && <ErrorMessage />}
     </>

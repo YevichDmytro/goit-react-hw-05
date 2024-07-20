@@ -1,13 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
 import style from './MovieList.module.css';
 
-const MovieList = ({ onFilter }) => {
+const MovieList = ({ moviesList }) => {
   const location = useLocation();
   const imgDefaultURL = 'https://image.tmdb.org/t/p/w500/';
 
   return (
     <ul className={style.list}>
-      {onFilter.map(item => {
+      {moviesList.map(item => {
         return (
           <li key={item.id} className={style.item}>
             <img
@@ -15,7 +15,7 @@ const MovieList = ({ onFilter }) => {
               alt={`movie title: ${item.original_title}`}
             />
             <Link
-              to={`/movie/${item.id}`}
+              to={`/movies/${item.id}`}
               state={location}
               className={style.link}
             >
