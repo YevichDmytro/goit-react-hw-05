@@ -1,0 +1,15 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.wrap {
+  padding: 10px;
+}

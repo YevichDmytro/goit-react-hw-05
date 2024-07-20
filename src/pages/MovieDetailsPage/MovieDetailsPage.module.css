@@ -1,0 +1,73 @@
+.linksWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  padding: 4px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.active {
+  background-color: orange;
+  color: #ffffff;
+}
+
+.detailsWrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+/* ============================================================== */
+
+.goBack {
+  --color: black;
+  --color2: orange;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 10px 0;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.goBack::before {
+  position: absolute;
+  content: '';
+  background: var(--color2);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.goBack:hover {
+  color: white;
+  border: 2px solid var(--color2);
+}
+
+.goBack:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.goBack:hover::before {
+  top: -30px;
+  left: -30px;
+}

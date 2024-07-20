@@ -1,0 +1,19 @@
+.errorWrap {
+  text-align: center;
+}
+
+.errorWrap > img {
+  margin: 0 auto;
+  width: 35vw;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.homeLink {
+  color: orange;
+  font-weight: 700;
+  font-size: 18px;
+}
